@@ -1,0 +1,81 @@
+@media screen and (max-width: 600px) {
+  .body {
+    width: 93%;
+    font-size: 95%;
+  }
+
+  .Main {
+    grid-template-columns: 4fr;
+    grid-template-areas:
+      "header"
+      "content"
+      "sidebar"
+      "footer";
+  }
+
+  /* ------------------------------------------ MIAN HEADER MOBILE ---------------- */
+
+  .mainheader nav {
+    height: 130px;
+  }
+
+  .mainheader ul {
+    width: 100%;
+    padding: 0;
+  }
+
+  .mainheader nav ul li {
+    display: inline;
+  }
+
+  .mainheader a:link,
+  .mainheader a:visited {
+    color: white;
+    padding: 5px 40px;
+    display: inline-block;
+    height: 23px;
+    display: block;
+  }
+
+  .mainheader a:hover,
+  .mainheader a:active {
+    color: white;
+    background-color: #f58233;
+    text-shadow: none;
+  }
+
+  .mainContent {
+    width: 100%;
+    margin-bottom: -7%;
+  }
+
+  .theSidebar {
+    width: 96%;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
+  .footer ul li {
+    width: 23px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1489px) {
+  .theSidebar {
+    width: 100%;
+  }
+
+  li progress {
+    font-size: 20px;
+  }
+
+  .mainContent {
+    width: 100%;
+    margin: 6px 0 -55px;
+  }
+
+  .mainheader nav {
+    width: 101%;
+  }
+}

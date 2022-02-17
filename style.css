@@ -1,0 +1,221 @@
+body {
+  background-image: url("img/2.jpg");
+  font-size: 100%;
+  font-style: initial;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: #e74c3c;
+}
+a:hover,
+a:active {
+  color: #f58233;
+}
+
+.body {
+  margin: 10px auto;
+  width: 95%;
+  clear: both;
+}
+/* --------------------- MIAN HEADER ---------------- */
+.mainheader nav {
+  background-color: #a1cae2;
+  height: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  grid-area: header;
+}
+
+.mainheader nav ul {
+  text-align: center;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.mainheader nav ul li {
+  display: inline;
+}
+
+.mainheader a:link,
+.mainheader a:visited {
+  color: #fff;
+  padding: 10px 30px;
+  display: inline-block;
+  height: 20px;
+}
+
+.mainheader a:hover,
+.mainheader a:active {
+  color: white;
+  background-color: #406882;
+  text-shadow: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+/* -------------------------------- MAIN  ---------------- */
+
+.Main {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "header  header"
+    "sidebar content"
+    "footer  footer";
+}
+
+.mainContent {
+  margin: 2px 0 -55px;
+}
+
+.top-content {
+  grid-area: content;
+  background-color: white;
+  padding: 3%;
+  margin-top: 2%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.top-content ul li {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.top-content p {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.top-content img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  float: left;
+  shape-outside: circle(50%);
+}
+
+h2 {
+  color: #1c6dd0;
+}
+
+.post-info {
+  font-size: 90%;
+  color: #999;
+  font-style: italic;
+  margin-top: -20px;
+}
+
+.post-content {
+  display: block;
+}
+/* ---------------------------------------- SIDE BAR ---------------- */
+.theSidebar {
+  grid-area: sidebar;
+  margin: 6% 0 -10%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+.theSidebar ul li {
+  font-size: 25px;
+  font-style: italic;
+}
+
+li progress {
+  font-size: 30px;
+  display: block;
+}
+
+h1 {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-color: #a1cae2;
+  text-align: center;
+  color: #fff;
+}
+
+.theSidebar h2 {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-color: #a1cae2;
+  text-align: center;
+  color: #fff;
+}
+/* ---------------------------------------- FOOTER ---------------- */
+.footer {
+  grid-area: footer;
+  margin-top: 25px;
+  float: left;
+  width: 100%;
+  background-color: #a1cae2;
+  height: 60px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.footer p {
+  text-align: right;
+  color: #fff;
+  width: 98%;
+  margin-top: -35px;
+}
+
+.footer ul li {
+  display: inline-block;
+  width: 40px;
+  height: 10px;
+}
+
+.footer ul li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.footer ul li a:hover {
+  background: #064663;
+}
+/* Icon */
+
+.fa-facebook {
+  color: #4267b2;
+}
+
+.fa-github {
+  color: black;
+}
+
+.fa-instagram {
+  color: red;
+}
+.fa-envelope {
+  color: black;
+}
+
+.fa-linkedin {
+  color: #2867b2;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
